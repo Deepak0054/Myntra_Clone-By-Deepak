@@ -5,12 +5,52 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+    margin-top: 120px;
+}
+.FontIcons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+    top: 250px;
+    right:15px;
+}
+.FontIcons a{
+    font-size:40px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #25D366;
+}
+.FontIcons a:nth-child(2){
+    font-size:40px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    color:red;
+}
+.FontIcons a:nth-child(3){
+    font-size:40px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    color:blue;
+}
+
 .header{
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 2px 5px 0px #ccc;
     display: flex;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
     justify-content: space-evenly;
     box-sizing: border-box;
     gap: 40px;
@@ -18,6 +58,9 @@
     top: 0px;left: 0px;right: 0px;
    
 }
+
+
+
 .header .left{
     display: flex;
     align-items:center;
@@ -26,15 +69,90 @@
 .header .left .logo{
     padding: 10px 15px;
 }
-.header .left .menu ul{
+.header .left .menu>ul{
      display:flex;
      list-style: none;
      gap:30px;
 }
-.header .left .menu ul li{
+.header .left .menu>ul>li{
+    box-sizing: border-box;
     font-weight:bolder;
     text-transform: uppercase;
+    padding:40px 10px;
+    
 }
+.header .left .menu>ul>li:hover{
+     box-sizing: border-box;
+     border-bottom: 2px solid purple;
+}
+
+.menu ul li:hover .Megamenu{
+    display: flex;
+     
+}
+
+.Megamenu{
+    width:1300px;
+    height:500px;
+    display: flex;
+    background-color:grey;
+    margin: auto;
+    position: absolute;
+    display: none;
+    top: 100px;
+    left:100px;
+    cursor: pointer;
+}
+.Megamenu .item1,.item1:nth-child(3),.item1:nth-child(5){
+    flex-basis: 23%;
+    background-color: #fff;
+    padding:10px 40px;
+    
+}
+.Megamenu .item1 ul li:hover{
+        font-weight: bold;
+        color: black;
+}
+.Megamenu .item1:nth-child(2),.item1:nth-child(4){
+    flex-basis: 23%;
+    padding:10px 40px;
+   background-color: #FBFBFB;
+}
+
+.Megamenu .item1 ul li{
+    list-style: none;
+    font-size: 11.5px;
+    font-weight:normal;
+    line-height: 25px;
+}
+.Megamenu .item1 h4{
+    padding: 10px 0px;
+    color: #EE5F73;
+    font-size:12px;
+    font-weight: bolder;
+}
+/* .Megamenu .item1 h4:nth-child()
+{   font-weight: bolder;
+    padding: 10px 0px;
+    color: ;
+} */
+
+/* .item1 hr{
+    margin:10px 0px;
+    color: #ccc;
+} */
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
 .header .left .menu ul a{
     text-decoration: none;
     color: black;
@@ -85,10 +203,10 @@
     text-decoration:none;
     color: black;
  }
- .fake{
+ /* .fake{
     width: 100%;
     height: 100px;
- }
+ } */
  .r1,.r2,.r3,.r4,.r5,.r7,.r8{
     width: 1420px;
     margin: auto;
